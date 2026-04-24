@@ -1,0 +1,138 @@
+<style>
+
+    
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333333;
+    }
+
+    
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      border: 1px solid #cccccc;
+    }
+
+    section h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 6px;
+    }
+
+   
+    div {
+      margin-bottom: 15px;
+    }
+
+    div h3 {
+      color: #003366;
+      margin-bottom: 4px;
+    }
+
+    /* Fieldset and form */
+    fieldset {
+      border: 1px solid #aaaaaa;
+      padding: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 60%;
+      padding: 6px;
+      margin-top: 4px;
+      border: 1px solid #aaaaaa;
+      font-size: 14px;
+    }
+
+    textarea {
+      width: 60%;
+    }
+
+    input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005599;
+    }
+
+    details {
+      border: 1px solid #cccccc;
+      padding: 10px;
+      margin-bottom: 8px;
+      background-color: #f9f9f9;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #003366;
+    }
+
+    details p {
+      margin-top: 8px;
+    }
+
+   
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #aaddff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
