@@ -1,5 +1,7 @@
     body {
-      background-color: #f0f0f0;
+       background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230416/pngtree-background-of-office-buildings-and-commercial-buildings-image_2394680.jpg');
+      background-size: cover;
+      background-attachment: fixed;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -36,6 +38,7 @@
     }
 
     section {
+      background-color: rgba(255, 255, 255, 0.6);
       background-color: white;
       margin: 20px auto;
       padding: 20px;
@@ -57,6 +60,13 @@
     div h3 {
       color: #003366;
       margin-bottom: 4px;
+    }
+    
+    .card {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+    section {
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
     /* Fieldset and form */
@@ -95,6 +105,13 @@
 
     input[type="submit"]:hover {
       background-color: #005599;
+    }
+    #successMsg {
+     display: none;
+    }
+
+    #storedData {
+     display: none;
     }
 
     details {

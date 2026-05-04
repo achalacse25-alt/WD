@@ -2,9 +2,10 @@
 <head>
   <title>Contact Us | Apex Consulting</title>
   <link rel="stylesheet" href="2nd part.css">
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
 <body>
   <header>
+    
     <h1>Apex Consulting</h1>
     <nav>
      <center><a href="C:\Users\Naresh\Desktop/Ex ED.html">Home</a>
@@ -21,43 +22,61 @@
 
   <section>
     <h2>Get In Touch</h2>
-
-    <div>
-     <h3><b><i>Phone</i></b></h3>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="card">
+  <div class="card-body">
+    <h3><b><i>Phone</i></b></h3>
       <p>+91 987654321<br>
          Monday – Friday, 9am – 6pm EST</p>
+  </div>
+</div>
     </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3><b><i>Email</i></b></h3>
+          <p><a href="mailto:peakconsulting@gmail.com">peakconsulting@gmail.com</a><br>
+             We reply within 24 hours</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+      <div class="card-body">
+        <h3><b><i>Office Location</i></b></h3>
+        <p>123 Business Avenue, Nagpur<br>
+           Maharashtra, 440022</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 
     <div>
-     <h3><b><i>Email</i></b></h3>
-      <p><a href="mailto:peakconsulting@gmail.com">peakconsulting@gmail.com</a><br>
-         We reply within 24 hours</p>
-    </div>
-
-    <div>
-     <h3><b><i>Office Location</i></b></h3>
-      <p>123 Business Avenue, Nagpur<br>
-         Maharashtra, 440022</p>
-    </div>
+      <center>
+     <h3><b><i>Location in Map</i></b></h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119096.5876041653!2d78.99410704932349!3d21.121799160410077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c076594f9777%3A0xf391f4edfeb0633e!2sAscent%20Business%20Solutions!5e0!3m2!1sen!2sin!4v1777810899764!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </center>
+  </div>
 
   </section>
-
   <section>
   <fieldset>
     <h2>Send Us an Inquiry</h2>
-    <form>
+    <form id="contactForm">
 
-      <label for="fullname">Full Name: </label>
-      <input type="text" placeholder="Your full name"><br><br>
+      <label for="fullname">Full Name: </label>      <input type="text" id="fullname" placeholder="Your full name"><br><br>
 
       <label for="email">Email Address: </label>
-      <input type="email" placeholder="yourexample@gmail.com"><br><br>
+      <input type="email" id="email" placeholder="yourexample@gmail.com"><span class="badge bg-danger">Responds in 24hrs</span><br><br>
 
       <label for="phone">Phone Number (Optional): </label>
-      <input type="text" placeholder="+91 0000000000"><br><br>
+      <input type="text" id="phone" placeholder="+91 0000000000"><br><br>
 
-      <label>Service of Interest</label><br>
-      <select>
+      <label for="service">Service of Interest</label><br>
+      <select id="service">
         <option value="">-- Select a Service --</option>
         <option>Business Strategy</option>
         <option>Financial Advisory</option>
@@ -67,12 +86,16 @@
         <option>Other</option>
       </select><br><br>
 
-      <label>Your Message</label><br>
-      <textarea rows="5" placeholder="Tell us about your project or question..." required></textarea><br><br>
+      <label for="message">Your Message</label><br>
+      <textarea id="message" rows="5" placeholder="Tell us about your project or question..." required></textarea><br><br>
 
-      <input type="submit" value="Submit Message">
-
+    <button type="submit" class="btn btn-outline-primary">Submit Message</button>
     </form>
+    
+    <div class="alert alert-success" role="alert" id="successMsg">
+      <h4 class="alert-heading">Well done!</h4>
+        Your message has been submitted and saved successfully!
+    </div>
   </fieldset>
   </section>
 
@@ -113,7 +136,6 @@
       <a href="C:\Users\Naresh\Desktop/Ex ED.html">Terms of Service</a>
     </p>
   </footer>
-  <script src="script.js"></script>
-
+  <script src="3rd part.js"></script>
 </body>
 </html>
